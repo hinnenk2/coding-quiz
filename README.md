@@ -24,7 +24,7 @@ Smaller devices screen example:
 ### Open your preferred web browser and enter the following web address to access.
 
 ```html
-file:///Users/ianhinnenkamp/bootcamp/coding-quiz/index.html
+https://hinnenk2.github.io/coding-quiz/
 ```
 <a name="usage"></a>
 ## 3. Usage Tips
