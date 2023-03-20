@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Coding Quiz</title>
+</head>
+
+<body>
+    <header>
+        <div id="highscore">View Highscores</div>
+        <div>Time Remaining: <span id="time">60</span></div>
+    </header>
+
+    <main>
+        <!-- Main Container - displays start screen, question screen, end of quiz, and highscore list -->
+        <section class="container">
+            <!-- Start screen div -->
+            <div class="div-start">
+                <h1>Coding Quiz</h1>
+                <p>
+                    Click the Start Quiz! button to test your coding knowledge.
+                </p>
+                <div class="button-start">
+                    <button id="start">Start Quiz!</button>
+                </div>
+            </div>
+
+            <!-- Questions screen div -->
+            <div class="div-question">
+                <h1 id="question"></h1>
+                <div class="buttons">
+                    <button id="answer-1" value=0></button>
+                    <button id="answer-2" value=1></button>
+                    <button id="answer-3" value=2></button>
+                    <button id="answer-4" value=3></button>
+                </div>
+                
+                <div id="correct-wrong" class="correct">Correct!</div>
+            </div>
+
+            <!-- End of quiz display -->
+            <div class="div-end">
+                <h1>Finished!</h1>
+                <h2>Your final score is: <span id="final-score"></span></h2>
+                <form id="score-form">
+                    <label for="initials">Enter your initials:</label>
+
+                    <!-- Initial input box is set to 4 characters, but can only enter 3 characters maximum for initials  -->
+                    <input type="text" id="initials" size="4" maxlength="3" />
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- div for high score list -->
+            <div class="high-score">
+                <h1>High Scores</h1>
+                <ol id="highscore-list"></ol>
+                <div id="highscore-buttons">
+                    <button id="back">Home</button>
+                    <button id="clear">Clear Highscore List</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>

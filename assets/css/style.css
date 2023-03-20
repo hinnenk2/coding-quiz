@@ -1,0 +1,208 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header - contains High Score list link and timer */
+
+header {
+    background-color: rgb(139, 170, 213);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 25px;
+}
+
+/* Link to High Score list */
+
+header div#highscore {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+header div#highscore:hover {
+    color: rgb(191, 187, 187);
+    cursor: pointer;
+}
+
+/* Timer */
+
+header #time {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* Main element for displaying start screen, question layout, end of quiz, and highscore list */
+
+main .container {
+    width: 500px;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+ main .container {
+     width: 300px;
+ }
+}
+
+main .container h1 {
+    font-size: 2rem;
+    padding-top: 45px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+/* Start screen div */
+
+main .container .div-start {
+    display: block;
+}
+
+main .container .div-start p {
+    padding-bottom: 25px;
+    line-height: 1;
+    font-size: 1.5rem;
+}
+
+main div.button-start {
+    display: flex;
+    justify-content: center;
+}
+
+main div.button-start button {
+    background-color: rgb(131, 127, 206);
+    font-size: 1.2rem;
+    padding: 15px;
+    border: 3px solid rgb(11, 17, 171);
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+main div.button-start button:hover {
+    background-color: rgb(99, 218, 229);
+}
+
+/* Question screen div */
+
+main .container .div-question {
+    /*Removes question elements at Start page*/
+    display: none;
+}
+
+main .container .div-question .buttons {
+    margin-bottom: auto;
+}
+
+main .container .div-question .buttons button {
+    display: block;
+    font-size: 1.3rem;
+    background-color: rgb(131, 127, 206);
+    padding: 10px;
+    margin: 5px;
+    border: 3px solid rgb(11, 17, 171);
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+main .container .div-question .buttons button:hover {
+    background-color: rgb(99, 218, 229);
+}
+
+/* Flash-messages as Correct or Wrong */
+
+main .container .div-question #correct-wrong {
+    display: none;
+    transition: 0.5s;
+}
+
+main .container .div-question .correct {
+    padding: 15px;
+    margin-top: 15px;
+    background-color: rgb(124, 230, 124);
+    font-weight: bold;
+}
+
+main .container .div-question .wrong {
+    padding: 15px;
+    margin-top: 15px;
+    background-color: rgb(227, 82, 82);
+    font-weight: bold;
+}
+
+/* div element for end screen */
+
+main .container .div-end {
+    display: none;
+}
+
+main .container .div-end h2 {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+main .container .div-end form {
+    text-align: center;
+}
+
+main .container .div-end form input {
+    font-size: 1.5rem;
+}
+
+main .container .div-end label {
+    display: block;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+main .container .div-end button {
+    background-color: rgb(131, 127, 206);
+    font-size: 1.2rem;
+    padding: 2px 5px 2px 5px;
+    border: 3px solid rgb(11, 17, 171);
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+main .container .div-end button:hover {
+    background-color: rgb(166, 142, 166);
+}
+
+/* div for highscore screen */
+
+main .container .high-score {
+    display: none;
+}
+
+main .container .high-score ol li {
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+main .container .high-score ol li:nth-child(odd) {
+    background-color:  rgb(219, 232, 26);
+}
+
+main .container .high-score ol li:nth-child(even) {
+    background-color:  rgb(89, 158, 186);
+}
+
+main .container .high-score div#highscore-buttons {
+    margin-top: 25px;
+}
+
+main .container .high-score div#highscore-buttons button {
+    background-color: rgb(131, 127, 206);
+    font-size: 1.5rem;
+    padding: 5px 5px 5px 5px;
+    border: 3px solid rgb(11, 17, 171);
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+main .container .high-score div#highscore-buttons button:hover {
+    background-color: rgb(230, 175, 230);
+}
